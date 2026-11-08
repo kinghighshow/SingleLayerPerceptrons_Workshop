@@ -72,7 +72,7 @@ The class notes describe a network that predicts **Prostate Cancer** or **Health
 ## 🚀 Getting Started
 
 ```bash
-git clone <this-repository-url>
+git clone https://github.com/kinghighshow/SingleLayerPerceptrons_Workshop.git
 cd SingleLayerPerceptrons_Workshop
 
 python -m venv .venv
