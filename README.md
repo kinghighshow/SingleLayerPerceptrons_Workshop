@@ -12,7 +12,7 @@ The work forms part of the foundation for **Practical Laboratory 3**.
 
 | Member | Contribution |
 |---|---|
-| **Sultan Atanda** | Part 1: Example 1, one patient step by step (forward pass, threshold, error, gradient descent update) · repository setup and integration |
+| **Sultan Atanda** | Part 1: three-input prediction (Age, PSA, MRI) and Example 1, one patient step by step (forward pass, threshold, error, gradient descent update) · repository setup and integration |
 | **Antonio Sainz** | Part 2: Example 1 on all 14 training patients (accuracy and error analysis) |
 | **John Buni** | Part 3: why one sigmoid neuron is not enough · Movies challenge · Gradient Descent and Backpropagation answer |
 | **Echezona Oji** | Part 4: Example 2, the hidden-layer network (forward pass and training-set evaluation) |
@@ -39,7 +39,7 @@ The class notes describe a network that predicts **Prostate Cancer** or **Health
 | Workshop (original) | Biological vs artificial neurons, activation functions, the Canada's Wonderland case study, and AND / OR / inhibitory logic gates in PyTorch and TensorFlow |
 | Homework answer | How gradient descent relates to backpropagation |
 | Movies challenge | A custom perceptron (weights `[1, 2, 1]`, bias `-2.5`) where having company matters most |
-| **Part 1** | Example 1 forward pass for PSA = 2.0, decision boundary, error, and one autograd weight update |
+| **Part 1** | Three-input prediction for the slide 13 patient (Age 62, PSA 2.9, MRI 3), then Example 1 for PSA = 2.0: decision boundary, error, and one autograd weight update |
 | **Part 2** | Example 1 run on all 14 patients, reproducing the slide's 86% accuracy |
 | **Part 3** | A single sigmoid neuron on the protein-x data, showing why it cannot separate the classes |
 | **Part 4** | The trained 1 → 2 → 2 hidden-layer network on the protein-x data |
@@ -79,7 +79,6 @@ python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 
 pip install -r requirements.txt
-pip install plotly
 jupyter notebook SingleLayerPerceptrons_Workshop.ipynb
 ```
 
